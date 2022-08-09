@@ -1,0 +1,82 @@
+# Text Interpolation
+component tarafındaki değişkenin değerini page de göstermek için kullanılır.
+html tarafındaki kullanımında double curly brackets içine değişken adı yazılır
+
+
+# Template Statements
+Template statement'lar bir user'ın ui tarafında tetiklediği olayları yönetmek için kullanıyoruz.
+Dinamik contentler için veya form gönderme işlemleri için kullanabiliriz
+
+
+# Property binding
+Html elementleri veya directiveleri için value belirlemede kullanılır.
+Genel olarak component tarafındaki bir datayı html tarafında kullanmamıza yarar.
+Componentler arasında dataları pass etmemize yarar.
+
+
+# Two-way binding
+uygulamadaki componentlere data share etmenin  bir yöntemini sunar. 
+Two-way binding eventleri dinler ve parent component ile child component arasında 
+eşzamanlı olarak dataları update eder.
+
+
+# Template Reference Variables
+Angular'da componentlerin, elementleri ve diğer componentleri tutan bir template özelliği vardır.
+Template reference variable, template'imizin bir kısmına erişmemizi sağlayan bir özelliktir.
+Bu sayede template'in bir bölümündeki verileri template'in başka bir bölümünde kullanmanıza yardımcı olur.
+
+
+# Ng Template
+Ng Template ile yalnızca Angular tarafından doğrudan veya 
+dolaylı olarak oluşturulan template içeriğini tanımlayabilir ve 
+içeriğin nasıl ve ne zaman display edileceği üzerinde tam kontrole sahip olmamızı sağlar
+
+
+# Ng Container
+NG container DOM üzerinde ekstra bir element create etmeden kullanmamıza yarar.
+Tarayıcı daha az element oluşturduğundan dolayı performansı çok az da olsa arttırır.
+Daha temiz bir DOM modeli oluşturur.
+Komplike stylingten uzaklaştırır.
+
+
+# Content Projection
+Content projection flexible ve reusable componentler oluşturmamıza yardım eder. 
+Başka bir component içinde kullanmak istediğiniz content'i eklediğimiz bir yapıdır. 
+Örneğin, başka bir component tarafından sağlanan içeriği kabul eden bir Card componenti gibi.
+
+Single-slot content projection
+Contenti tek bir source'tan kabul eder.
+
+Multi-slot content projection
+Contenti bir çok source'tan kabul edebilir.
+
+Conditional content projection
+Yalnızca belirli koşullar karşılandığında oluşturur.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+<h1>NG Template Outlet</h1>
+
+<hr />
+<br />
+
+<ng-container *ngTemplateOutlet="light; context: myContext"></ng-container>
+
+<ng-container *ngTemplateOutlet="dark; context: myContext"></ng-container>
+
+<ng-template #dark let-name="sith"><p>{{ name }}</p></ng-template>
+
+<ng-template #light let-name="jedi"><p>{{ name }}</p></ng-template>

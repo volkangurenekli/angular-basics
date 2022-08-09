@@ -1,0 +1,24 @@
+<h1>Template Statements</h1>
+
+<hr />
+<br />
+
+<button class="btn btn-danger m-1" (click)="delete()">Delete</button>
+
+<br />
+
+<button class="btn btn-success m-1" (click)="onSave($event)">Save</button>
+
+<br />
+
+<button
+  class="btn btn-warning text-dark m-1"
+  *ngFor="let hero of heroes"
+  (click)="removeHero(hero)"
+>
+  {{ hero }}
+</button>
+
+<br />
+
+<img src="https://miro.medium.com/max/1400/1*zAXDATXqFF7qoJAsvf5ecQ.png" />

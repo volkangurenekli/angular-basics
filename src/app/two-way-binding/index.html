@@ -1,0 +1,15 @@
+<h1>Two-way Binding</h1>
+
+<hr />
+<br />
+
+<two-way-binding-child [(size)]="fontSizePx"></two-way-binding-child>
+
+<input [(ngModel)]="fontSizePx" type="number" />
+
+<!-- 
+<two-way-binding-child
+  [size]="fontSizePx"
+  (sizeChange)="fontSizePx = $event"
+></two-way-binding-child> 
+-->

@@ -1,0 +1,34 @@
+<h1>NG Container</h1>
+
+<hr />
+<br />
+
+<ng-container *ngIf="movies">
+  <li *ngFor="let movie of movies">{{movie}}</li>
+</ng-container>
+
+<div *ngIf="movies">
+  <li *ngFor="let movie of movies">{{movie}}</li>
+</div>
+
+<br />
+<hr />
+<br />
+
+<button class="btn btn-primary" (click)="condition=!condition">Change</button>
+
+<ng-container *ngIf="condition; else templateA">Condition True</ng-container>
+
+<ng-template #templateA> Condition False</ng-template>
+
+<ng-container
+  *ngTemplateOutlet="light; context: { jedi: 'Analin Skywalker', sith: 'Darth Vader' }"
+></ng-container>
+
+<ng-container
+  *ngTemplateOutlet="dark; context: { jedi: 'Analin Skywalker', sith: 'Darth Vader' }"
+></ng-container>
+
+<ng-template #dark let-name="sith"><p>{{ name }}</p></ng-template>
+
+<ng-template #light let-name="jedi"><p>{{ name }}</p></ng-template>

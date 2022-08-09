@@ -1,0 +1,55 @@
+<h1>Property Binding</h1>
+
+<hr />
+<br />
+
+<ul>
+  <li>Attribute Binding</li>
+  <li>Class Binding</li>
+  <li>Style Binding</li>
+  <li>Event Binding</li>
+</ul>
+
+<div [class]="classes">
+  <img
+    [alt]="hero"
+    [src]="imgUrl"
+    [style.width]="'15rem'"
+    [style.height]="'15rem'"
+  />
+
+  <h5 [innerHTML]="hero"></h5>
+
+  <p [innerHTML]="desc"></p>
+
+  <button
+    class="btn"
+    [attr.disabled]="alwaysTrue"
+    [class.btn-secondary]="alwaysTrue"
+    (click)="console.log(hero)"
+  >
+    Disabled Button
+  </button>
+
+  <br />
+
+  <button
+    class="btn"
+    [class.btn-primary]="alwaysTrue"
+    (click)="console.log(hero)"
+  >
+    Active Button
+  </button>
+</div>
+
+<br />
+
+<child-component
+  [title]="hero"
+  [url]="imgUrl"
+  [description]="desc"
+></child-component>
+
+<br />
+
+<img src="https://miro.medium.com/max/1400/1*aifbepspFomNuLIod1Gsqw.png" />

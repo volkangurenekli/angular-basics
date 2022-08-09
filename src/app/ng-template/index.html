@@ -1,0 +1,35 @@
+<h1>NG Template</h1>
+
+<hr />
+<br />
+
+<li>Sheev Palpatine</li>
+<ng-template>
+  <li>Darth Sidious</li>
+</ng-template>
+<li>Senator of Naboo</li>
+<li>Supreme Chancellor</li>
+<li>Emperor of the Galactic Empire</li>
+
+<hr />
+
+<div *ngIf="status else loading">Web Page Loaded</div>
+
+<br />
+
+<button class="btn btn-primary" (click)="getData()">
+  Get data from server
+</button>
+
+<ng-template #loading>
+  <div class="progress">
+    <div
+      class="progress-bar progress-bar-striped progress-bar-animated"
+      role="progressbar"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      [attr.aria-valuenow]="progressValue"
+      [style.width.%]="progressValue"
+    ></div>
+  </div>
+</ng-template>
